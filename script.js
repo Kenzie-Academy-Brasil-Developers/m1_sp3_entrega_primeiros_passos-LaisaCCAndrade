@@ -2,12 +2,12 @@
 let num1 = parseInt(prompt('Digite um número:'));
 let num2 = parseInt(prompt('Digite mais um número:'));
 let diferenca = num1 - num2;
-let diferencas = num2 - num1
+let diferencas = num2 - num1;
 
 if(num1 > num2){
-    alert(`O maior número é ${num1} e a diferença é ${diferenca}`)
-}else if(num2 > num1){
-    alert(`O maior número é ${num2} e a diferença é ${diferencas}`)
+    alert(`O maior número é ${num1} e a diferença é ${diferenca}`);
+}else{
+    alert(`O maior número é ${num2} e a diferença é ${diferencas}`);
 }
 
 //2
@@ -26,46 +26,46 @@ if(n1 > n2){
 let salario = parseFloat(prompt('Digite seu salário'));
 let emprestimo = parseFloat(prompt('Digite seu empréstimo'));
 
-if(emprestimo >= (salario * 30 / 100)){
-    alert('Emprestimo não concedido')
+if(emprestimo > (salario * 30 / 100)){
+    alert('Emprestimo não concedido');
 }else{
-    alert('Emprestimo concedido')
+    alert('Emprestimo concedido');
 }
 
 //4
 let numero1 = parseInt(prompt('Digite um número'));
 
 if(numero1 % 3 == 0 && numero1 % 5 == 0){
-    alert('Valor inválido')
+    alert('Valor inválido');
 }else if(numero1 % 3 == 0){
-    alert('Valor divisível por 3')
+    alert('Valor divisível por 3');
 }else if(numero1 % 5 == 0){
-    alert('Valor divisível por 5')
+    alert('Valor divisível por 5');
 }else if(numero1 % 2 == 0){
-    alert('O número é par')
+    alert('O número é par');
 }else{
-    alert('O número é impar')
+    alert('O número é impar');
 }
 
 //5
 let semana = parseInt(prompt('Digite um número de 1 a 7'));
 
  if(semana == 1){
-    alert('Domingo')
+    alert('Domingo');
 }else if(semana == 2){
-    alert('Segunda-feira')
+    alert('Segunda-feira');
 }else if(semana == 3){
-    alert('Terça-feira')
+    alert('Terça-feira');
 }else if(semana == 4){
-    alert('Quarta-feira')
+    alert('Quarta-feira');
 }else if(semana == 5){
-    alert('Quinta-feira')
+    alert('Quinta-feira');
 }else if(semana == 6){
-    alert('Sexta-feira')
+    alert('Sexta-feira');
 }else if(semana == 7){
-    alert('Sabádo')
+    alert('Sabádo');
 }else{
-    alert('Número inválido')
+    alert('Número inválido');
 }
 
 //6
@@ -73,22 +73,21 @@ let salario1 = parseFloat(prompt('Digite seu salário'));
 let reajuste = parseFloat(prompt('Digite o reajuste anual'));
 
 if(reajuste > 5){
-    alert('Reajuste errado!')
+    alert('Reajuste errado!');
 }else{
     salarioAtual = (salario1 * reajuste) / 100
     salarioAtualizado = salario1 + salarioAtual
-    alert(`O salário do funcionário corrigido é de ${salarioAtualizado}`)
+    alert(`O salário do funcionário corrigido é de ${salarioAtualizado}`);
 }
 
-7
+//7
 let valorDolar = parseFloat(prompt('Digite quantos dolares'));
-let real = valorDolar * 5.27;
+let real = parseFloat(prompt('Digite o valor de cotação'))
+let cotacao = valorDolar * real;
 
-let dolarReal = 5.27
+alert(`$ ${valorDolar} é equivalente a R$ ${cotacao.toFixed(2)} tendo R$ ${real.toFixed(2)} como cotação`);
 
-alert(`$ ${valorDolar} é equivalente a R$ ${real} tendo ${dolarReal} como cotação`)
-
-//8 TERMINAR DE FAZER
+//8 
 let tipoPluviacao = parseInt(prompt('Qual o tipo de praga: 1-Ervas daninhas; 2-Gafanhotos; 3-Broca; 4-Todos acima?'));
 let tamanhoAcre = parseInt(prompt('Qual tamanho do acre?'));
 let tipo1 = 50
@@ -124,22 +123,22 @@ alert(`O valor a ser pago é de ${resultado.toFixed(2)}`);
 
 //9
 let tempo1 = parseInt(prompt('Qual o tempo gasto'));
-let velocidade = parseInt(prompt('Qual a velocidade'))
+let velocidade = parseInt(prompt('Qual a velocidade'));
 
 let distancia = tempo1 * velocidade
 let litrosUsados = distancia / 12
 
-alert(`Seu veículo percorreu ${distancia} km a ${velocidade} km/h em ${tempo}h de viagem e consumiu ${litrosUsados.toFixed(2)}l de gasolina`)
+alert(`Seu veículo percorreu ${distancia} km a ${velocidade} km/h em ${tempo}h de viagem e consumiu ${litrosUsados.toFixed(2)}l de gasolina`);
 
 //10
 let valor = parseFloat(prompt('Digite o valor da sua prestação'));
 let taxa = parseFloat(prompt('Digite o valor da taxa'));
 let tempo = parseFloat(prompt('Quantos dias está em atraso?'));
 
-let prestacao = valor + (valor * (taxa/100) * tempo)
+let prestacao = valor + (valor * (taxa/100) * tempo);
 
 if(tempo % 1 === 0){
     alert(`O valor a prestação atualizado é ${prestacao}`)
 }else{
-    alert('Valor inválido o tempo deve ser em dias')
+    alert('Valor inválido o tempo deve ser em dias');
 }
